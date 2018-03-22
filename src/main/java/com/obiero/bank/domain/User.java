@@ -36,12 +36,12 @@ public class User {
     @OneToOne
     private SavingsAccount savingsAccount;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @JsonIgnore
-    private List<Appointment> appointmentList;
+   // @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+   // @JsonIgnore
+   // private List<Appointment> appointmentList;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<Recipient> recipientList;
+   // @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+   // private List<Recipient> recipientList;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 
@@ -104,21 +104,21 @@ public class User {
         this.phone = phone;
     }
 
-    public List<Appointment> getAppointmentList() {
-        return appointmentList;
-    }
+  //  public List<Appointment> getAppointmentList() {
+   //     return appointmentList;
+   // }
 
-    public void setAppointmentList(List<Appointment> appointmentList) {
-        this.appointmentList = appointmentList;
-    }
+   // public void setAppointmentList(List<Appointment> appointmentList) {
+   //     this.appointmentList = appointmentList;
+   // }
 
-    public List<Recipient> getRecipientList() {
-        return recipientList;
-    }
+   // public List<Recipient> getRecipientList() {
+   //     return recipientList;
+   // }
 
-    public void setRecipientList(List<Recipient> recipientList) {
-        this.recipientList = recipientList;
-    }
+   // public void setRecipientList(List<Recipient> recipientList) {
+   //     this.recipientList = recipientList;
+   // }
 
     public String getPassword() {
         return password;
@@ -158,8 +158,8 @@ public class User {
                 ", lastName='" + lastName + '\'' +
                 ", email='" + email + '\'' +
                 ", phone='" + phone + '\'' +
-                ", appointmentList=" + appointmentList +
-                ", recipientList=" + recipientList +
+              //  ", appointmentList=" + appointmentList +
+              //  ", recipientList=" + recipientList +
                 //    ", userRoles=" + userRoles +
                 '}';
     }

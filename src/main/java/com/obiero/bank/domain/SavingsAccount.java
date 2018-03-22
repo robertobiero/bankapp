@@ -22,9 +22,9 @@ public class SavingsAccount {
     private int accountNumber;
     private BigDecimal accountBalance;
 
-    @OneToMany(mappedBy = "savingsAccount", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    @JsonIgnore
-    private List<SavingsTransaction> savingsTransactionList;
+    //@OneToMany(mappedBy = "savingsAccount", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+   // @JsonIgnore
+   // private List<SavingsTransaction> savingsTransactionList;
 
     public Long getId() {
         return id;
@@ -50,13 +50,13 @@ public class SavingsAccount {
         this.accountBalance = accountBalance;
     }
 
-    public List<SavingsTransaction> getSavingsTransactionList() {
-        return savingsTransactionList;
-    }
+  //  public List<SavingsTransaction> getSavingsTransactionList() {
+    //    return savingsTransactionList;
+  //  }
 
-    public void setSavingsTransactionList(List<SavingsTransaction> savingsTransactionList) {
-        this.savingsTransactionList = savingsTransactionList;
-    }
+  //  public void setSavingsTransactionList(List<SavingsTransaction> savingsTransactionList) {
+   //     this.savingsTransactionList = savingsTransactionList;
+  //  }
 
 
 }
